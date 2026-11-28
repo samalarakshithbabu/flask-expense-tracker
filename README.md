@@ -1,38 +1,63 @@
-# Flask Expense Tracker
+# 💰 Flask Expense Tracker
 
-A simple and functional expense tracker web application built with Flask and SQLite. Helps users manage personal expenses by allowing them to add, store, and view expense records through a clean web interface and RESTful APIs.
+<div align="center">
+
+![Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3.0-black?logo=flask)
+![SQLite](https://img.shields.io/badge/SQLite-Light-blue?logo=sqlite)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**Simple Personal Expense Tracking Web Application**
+
+[![View Demo](https://img.shields.io/badge/View-Demo-blue)]()
+[![Report Issue](https://img.shields.io/badge/Report-Issue-red)](https://github.com/samalarakshithbabu/flask-expense-tracker/issues)
+
+</div>
 
 ---
 
-## Problem Statement
+## 🚀 Executive Summary
 
-Personal expense tracking requires a lightweight, self-hosted solution with persistent storage and API access for integration.
+A **simple and functional expense tracker web application** built with Flask and SQLite. Helps users manage personal expenses by adding, storing, and viewing records through a clean web interface and RESTful APIs.
 
-## Objectives
+### What It Does
 
-- Provide a web interface for adding and viewing expenses
-- Persist data in SQLite
-- Expose REST API endpoints (GET and POST)
-- Keep the application simple and dependency-light
+```mermaid
+graph LR
+    A[User] --> B[Web Form]
+    B --> C[Flask Backend]
+    C --> D[SQLite Database]
+    D --> C
+    C --> E[Display Expenses]
+    C --> F[REST API]
+```
 
-## Key Features
+---
 
-- **Add Expenses** — date, category, description, and amount
-- **View All Expenses** — display stored records
-- **REST API** — JSON-based POST (add) and GET (fetch) endpoints
-- **SQLite Persistence** — auto-created database file
-- **Jinja2 Templates** — HTML form for user input
+## ✨ Key Features
 
-## Technologies Used
+| Feature | Description |
+|---------|-------------|
+| **Add Expenses** | Date, category, description, and amount |
+| **View Expenses** | Display all stored records |
+| **REST API** | JSON-based POST (add) and GET (fetch) |
+| **SQLite Persistence** | Auto-created local database |
+| **Jinja2 Templates** | Clean HTML form interface |
 
-| Component | Technology |
-|-----------|-----------|
-| Backend | Python (Flask) |
-| Database | SQLite |
-| Frontend | HTML (Jinja2 templating) |
-| API | JSON REST |
+---
 
-## Project Structure
+## 🛠️ Technology Stack
+
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Backend** | Python + Flask | Web framework |
+| **Database** | SQLite | Local persistence |
+| **Frontend** | HTML + Jinja2 | Templating |
+| **API** | JSON REST | Programmatic access |
+
+---
+
+## 📁 Project Structure
 
 ```
 flask-expense-tracker/
@@ -41,10 +66,12 @@ flask-expense-tracker/
 ├── templates/
 │   └── index.html      # HTML form for user input
 ├── static/             # Optional CSS, images, JS
-└── README.md
+└── README.md           # This file
 ```
 
-## Installation and Setup
+---
+
+## 🛠️ Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -52,33 +79,45 @@ flask-expense-tracker/
 
 ### Setup
 ```bash
+git clone https://github.com/samalarakshithbabu/flask-expense-tracker.git
+cd flask-expense-tracker
 pip install flask
 python app.py
+# Opens at http://localhost:5000
 ```
 
-Application runs at `http://localhost:5000`.
+---
 
-## API Endpoints
+## 📡 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | / | View all expenses |
-| POST | /add | Add a new expense (JSON) |
+| GET | `/` | View all expenses |
+| POST | `/add` | Add new expense (JSON) |
+| GET | `/api/expenses` | Get all expenses (JSON) |
 
-## Limitations
+---
 
-- No user authentication
-- No expense editing or deletion
-- Single-user (no multi-tenant support)
+## ⚠️ Limitations
 
-## Author and Contact Information
+| Limitation | Description |
+|------------|-------------|
+| **No Authentication** | Anyone can access |
+| **No Edit/Delete** | Expenses cannot be modified |
+| **Single User** | No multi-tenant support |
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
 
 **SAMALA RAKSHITH BABU**
 
-- Email: samalarakshithbabu7@gmail.com
-- LinkedIn: https://www.linkedin.com/in/samala-rakshith-babu-9374ab281/
-- GitHub: https://github.com/samalarakshithbabu
-
-## License
-
-No LICENSE file present in repository.
+- 📧 Email: samalarakshithbabu7@gmail.com
+- 💼 LinkedIn: [samala-rakshith-babu](https://www.linkedin.com/in/samala-rakshith-babu/)
+- 🐙 GitHub: [samalarakshithbabu](https://github.com/samalarakshithbabu)
